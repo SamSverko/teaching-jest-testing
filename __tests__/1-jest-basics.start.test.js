@@ -1,4 +1,4 @@
-const functions = require("../src/utils");
+// const functions = require("../src/utils");
 
 // `test('it works', () => {})` is the Jest test runner.
 // `expect(actual).toBe(expected)` is the Jest assertion library.
