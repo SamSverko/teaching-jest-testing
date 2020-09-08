@@ -9,7 +9,7 @@ test("Adds 2 + 2 to equal 4", () => {
   expect(myValue).toBe(4);
 });
 
-// .not() | Tests if value should not be a certain value
+// .not | Tests if value should not be a certain value
 test("Adds 2 + 2 to not equal 5", () => {
   const myValue = 2 + 2;
   expect(myValue).not.toBe(5);
