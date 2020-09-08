@@ -1,0 +1,37 @@
+{
+  "name": "teaching-jest-testing",
+  "version": "0.1.0",
+  "private": true,
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "scripts": {
+    "build": "react-scripts build",
+    "eject": "react-scripts eject",
+    "start": "react-scripts start",
+    "test": "yarn jest --testPathPattern=__tests__/ --testPathIgnorePatterns end.test.js",
+    "test-all": "yarn jest --testPathPattern=__tests__/",
+    "test-watch": "yarn jest --testPathPattern=__tests__/ --testPathIgnorePatterns end.test.js --watchAll"
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.20.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.3"
+  }
+}
