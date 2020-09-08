@@ -1,68 +1,53 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# teaching-jest-testing
 
-## Available Scripts
+This repo contains examples to teach the basics of [Jest](https://jestjs.io/) and [Testing Library (React)](https://testing-library.com/docs/react-testing-library/intro).
 
-In the project directory, you can run:
+---
 
-### `yarn start`
+## Getting Started
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1) Clone repository, run `git clone git@github.com:SamSverko/teaching-jest-testing.git`.
+2) Install dependencies, run `yarn`.
+3) Start React app, run `yarn start`.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+---
 
-### `yarn test`
+## Project Orientation
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+There are two lessons, **Jest Basics** and **Testing Library**.
 
-### `yarn build`
+The only files you will need to edit are located inside the `__tests__` directory.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+There are two types of test files, or "**Test Suites**", inside `__tests__`:
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+1) **Lesson Suites** (files that end with the convention `.start.test.js`).
+2) **Answer Suites** (files that end with the convention `.end.test.js`).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Each **Lesson Suite** will have a respective **Answer Suite** (e.g. the Lesson Suite file `1-jest-basics.start.test.js` has a respective **Answer Suite** file `1-jest-basics.end.test.js`).
 
-### `yarn eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Helpful Commands
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- To test all **Lesson Suites**, run `yarn test`.
+- To test and watch all **Lesson Suites**, run `yarn test-watch`.
+- To test all **Test Suites** (i.e. all **Lesson** & **Answer Suites**), run `yarn test-all`.
+- To test a specific file, run `yarn jest __tests__/[TEST_SUITE_FILE_NAME]` (e.g. `yarn jest __tests__/1-jest-basics.start.test.js`).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+---
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Resources
 
-## Learn More
+- [Jest | Getting Started](https://jestjs.io/docs/en/getting-started)
+- [Testing Library | Introduction](https://testing-library.com/docs/intro)
+- [Kent C. Dodds | How to know what to test](https://kentcdodds.com/blog/how-to-know-what-to-test)
+- [YouTube - Traversy Media | Jest Crash Course - Unit Testing in JavaScript](https://www.youtube.com/watch?v=7r4xVDI2vho)
+- [YouTube - Headway | Intro to React Testing [Jest and React Testing Library Tutorial]](https://www.youtube.com/watch?v=ZmVBCpefQe8)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Acknowledgements
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+The examples found in this repo have been developed off the following tutorials:
+- [Traversy Media's Jest Crash Course - Unit Testing in JavaScript](https://www.youtube.com/watch?v=7r4xVDI2vho)
+- [Headway's Intro to React Testing [Jest and React Testing Library Tutorial]](https://www.youtube.com/watch?v=ZmVBCpefQe8)
