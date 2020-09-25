@@ -33,7 +33,7 @@ test("Should be defined", () => {
   expect(myValue).toBeDefined();
 });
 
-// .toBeTruth() | Ttests if value should equal `true`
+// .toBeTruthy() | Ttests if value should equal `true`
 test("Should be truthy", () => {
   const myValueBoolean = true;
   const myValueString = "hello";
